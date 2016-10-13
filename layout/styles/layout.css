@@ -1,11 +1,5 @@
 @charset "utf-8";
 /*
-Template Name: Abele
-Author: <a href="http://www.os-templates.com/">OS Templates</a>
-Author URI: http://www.os-templates.com/
-Licence: Free to use under our free template licence terms
-Licence URI: http://www.os-templates.com/template-terms
-File: Layout CSS
 */
 
 @import url("fontawesome-4.2.0.min.css");
@@ -14,20 +8,25 @@ File: Layout CSS
 /* Rows
 --------------------------------------------------------------------------------------------------------------- */
 .row0, .row0 a{}
-.row1{border-top:2px solid;}
+.row1{
+	border-bottom:0px solid;
+	border-top:0px solid;
+}
 .row2, .row2 a{}
+.row3{
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
 .row3, .row3 a{}
 .row4, .row4 a{}
-.row5{border-top:1px solid;}
-.row6, .row6 a{}
-
-.row0{
-	background-color: #8ABA56;
+.row5{
+	border-top:0px solid;
 }
+.row6, .row6 a{}
 
 /* Top Bar
 --------------------------------------------------------------------------------------------------------------- */
-#topbar{padding:5px 0 8px; font-size:12px; text-transform:uppercase;}
+#topbar{padding:10px 0 8px; margin-top:1000px; font-size:12px; text-transform:uppercase;}/*///////////////////////////////////////////*/
 
 #topbar .nospace.linklist{}
 #topbar .nospace.linklist li{display:inline; margin-right:5px; padding-right:8px; border-right:1px solid;}
@@ -57,7 +56,7 @@ File: Layout CSS
 
 /* Content Area
 --------------------------------------------------------------------------------------------------------------- */
-.container{padding:80px 0;}
+.container{padding:50px 0;}
 
 /* Content */
 .container .content{}
@@ -123,9 +122,9 @@ File: Layout CSS
 
 /* Footer
 --------------------------------------------------------------------------------------------------------------- */
-#footer{padding:50px 0;}
+/*#footer{padding:50px 0;}*/
 
-#footer .title{margin:0 0 30px 0; padding:0 0 8px 0; border-bottom:1px solid; font-size:16px; text-transform:uppercase;}
+#footer .title{margin:0px 0 60px 0; padding:0 0 8px 0; border-bottom:1px solid; font-size:16px; text-transform:uppercase;}
 
 #footer .linklist li{margin-bottom:15px;}
 #footer .linklist li:last-child{margin-bottom:0;}
@@ -253,7 +252,12 @@ td{border-width:0 1px;}
 
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
-body{color:#888888; background-color:#111111;}
+body{
+	color:#636363;
+	background: url(../../images/demo/backgrounds/main.jpg) #111111;
+	background-size: cover;
+	background-attachment: fixed;
+}
 
 a{color:#8ABA56;}
 
@@ -265,10 +269,23 @@ label span{color:#FF0000; background-color:inherit;}
 
 
 /* Rows */
-.row0, .row0 a{color:#333/*888888*/; background-color:#fff;}/**/
-.row1{color:#292929; background-color:#252525; border-color:#8ABA56;}}
+.row0, .row0 a{color:#333/*888888*/; background-color:#F7F7F7;}/**/
+.row1{
+	color:#292929;
+	background-color:#252525;
+	border-color:#8ABA56;
+	/*border-bottom-color: #888888;*/
+}
 .row2{color:#FFFFFF; background-color:#232323;}
-.row3{color:#292929; background-color:#FFFFFF;}
+
+.row3{
+	color: azure/*292929*/;
+	background-color: rgba(255,255,255,0.16);
+
+	/*opacity: 0.3; /* Полупрозрачный фон */
+	/*filter: alpha(Opacity=70); /* Прозрачность в IE */
+}
+
 .row4, .row4 a{color:#292929; background-color:#F3F3F3;}
 .row5{color:#888888; background-color:#232323; border-color:#8ABA56;}
 .row6, .row6 a{color:#888888; background-color:#111111;}
