@@ -16,11 +16,17 @@
 .row3{
 	margin-top: 30px;
 	margin-bottom: 60px;
-}
+
+  }
 .row3, .row3 a{}
 .row4, .row4 a{}
 .row5{
 	border-top:0px solid;
+    /*position: absolute;*/
+
+    /*min-height: 100px;*/
+    display: block;
+    bottom: 0px;
 }
 .row6, .row6 a{}
 
@@ -45,7 +51,7 @@
 --------------------------------------------------------------------------------------------------------------- */
 #intro{padding:120px 0;}
 
-#intro article{text-align:center; opacity:.5;}
+#intro article{text-align:center; opacity:.8;} /*подсветка*/
 #intro article:hover{opacity:1;}
 #intro article *{display:block; width:100%; margin:0; padding:0; box-sizing:border-box;}
 #intro article .heading{padding:30px 25px; font-size:18px;}
@@ -257,6 +263,13 @@ body{
 	background: url(../../images/demo/backgrounds/main.jpg) #111111;
 	background-size: cover;
 	background-attachment: fixed;
+
+
+    min-height: 100%;
+    padding-bottom: 0px;
+
+    display: block;
+    bottom: 0;
 }
 
 a{color:#8ABA56;}
@@ -420,7 +433,7 @@ table a, #comments a{background-color:inherit;}
 /* Max Wrapper Width - Laptop, Desktop etc.
 --------------------------------------------------------------------------------------------------------------- */
 @media screen and (min-width:978px) {
-	#topbar, #header, #intro, #breadcrumb, .container, #cta, #footer, #copyright{max-width:978px;}
+	#topbar, #header, #intro, #breadcrumb, .container, #cta, #footer, #copyright{max-width:980px;}
 }
 
 
