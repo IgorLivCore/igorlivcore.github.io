@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>PlitProfi | Галерея</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <title>PlitProfi | Галерея</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+
+  <!--galery_dog--
+  <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="jphotogrid.css" rel="stylesheet" type="text/css" media="screen" />
+  <!--[if IE]
+  <link href="jphotogrid.ie.css" rel="stylesheet" type="text/css" media="screen" />
+  <![endif]--
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script src="jphotogrid.js"></script>
+  <script src="jflickrfeed.js"></script>
+  <script src="setup.js"></script>
+  <!--galery_dog end-->
 </head>
-<body id="top">
+<body>
+<div class="page_wraper">
+<div id="top">
 <!-- ################################################################################################ -->
 <!--<div class="wrapper row0">
   <div id="topbar" class="clear"> 
@@ -35,24 +49,22 @@
   <header id="header" class="clear"> 
     <!-- ################################################################################################ -->
     <div id="logo" class="fl_left">
-      <h1><a href="index.html">plit profi.ru</a></h1>
+      <h1><a href="../index.html" style="color: rgb(226, 226, 226);">plit profi</a></h1>
     </div>
     <!-- ################################################################################################ -->
     <nav id="mainav" class="fl_right">
       <ul class="clear">
-        <li><a href="/index.html">Главная</a></li>
-        <li><a class="drop" href="#">Услуги</a>
+        <li><a href="../index.html">Главная</a></li>
+        <li><a class="" href="#">Услуги</a></li>
+        <li><a href="#">Цены</a></li>
+
+        <li class="active"><a class="drop" href="#">Галерея</a>
           <ul>
-            <li><a href="#">Цены</a></li>
-            <li><a href="#">страница1</a></li>
-            <li><a href="#">страница2</a></li>
-            <li><a href="#">и т.д.</a></li>
-            <!--<li><a href="pages/full-width.html">Full Width</a></li>
-            <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
-            <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
-            <li><a href="pages/basic-grid.html">Basic Grid</a></li>-->
+            <li><a href="gallery_sber.html">Сбербанк</a></li>
+            <li><a href="#">Планетарий</a></li>
           </ul>
-        <li class="active"><a href="#">Галерея</a></li>
+        </li>
+
         <li><a href="#">Отзывы</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
@@ -81,33 +93,74 @@
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <div class="wrapper row3">
-  <main class="container clear"> 
+  <main class="container clear">
     <!-- main body -->
     <!-- ################################################################################################ -->
-    <div class="content"> 
+    <div class="content">
       <!-- ################################################################################################ -->
       <div id="gallery">
         <figure>
-          <header class="heading">Мои работы</header>
+          <header class="heading">
+            <h4><span style="color: #33df33;">></span> Все альбомы</h4>
+          </header>
           <ul class="nospace clear">
-            <li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/featured.jpg" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/f2.jpg" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/featured.jpg" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/f2.jpg" alt=""></a></li>
-            <li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/featured.jpg" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/f2.jpg" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/featured.jpg" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/f2.jpg" alt=""></a></li>
-            <li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/gallery.gif" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/gallery.gif" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/gallery.gif" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/gallery.gif" alt=""></a></li>
-            <li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/gallery.gif" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/gallery.gif" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/gallery.gif" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/gallery.gif" alt=""></a></li>
+
+
+              <!--class="one_quarter g_image first shadow_album"> for album view-->
+            <li class="one_quarter g_image first"><a href="gallery_sber.html"><div class="" style="">
+              <div class=""><img src="../images/demo/gallery/featured_250x188.jpg" alt="">
+                <div class="desc_album">Сбербанк</div></div></div></a></li>
+            <li class="one_quarter g_image"><a href="gallery_sber.html"><div class="_album" style="">
+              <div class=""><img src="../images/demo/gallery/featured_250x188.jpg" alt="">
+                <div class="desc_album">Сбербанк</div></div></div></a></li>
+            <li class="one_quarter g_image"><a href="gallery_sber.html"><div class="_album" style="">
+              <div class=""><img src="../images/demo/gallery/featured_250x188.jpg" alt="">
+                <div class="desc_album">Сбербанк</div></div></div></a></li>
+            <li class="one_quarter g_image"><a href="gallery_sber.html"><div class="_album" style="">
+              <div class=""><img src="../images/demo/gallery/featured_250x188.jpg" alt="">
+                <div class="desc_album">Сбербанк</div></div></div></a></li>
+
+            <li class="one_quarter g_image first"><a href="gallery_sber.html"><div class="_album" style="">
+              <div class=""><img src="../images/demo/gallery/featured_250x188.jpg" alt="">
+                <div class="desc_album">Сбербанк</div></div></div></a></li>
+            <li class="one_quarter g_image"><a href="gallery_sber.html"><div class="_album" style="">
+              <div class=""><img src="../images/demo/gallery/featured_250x188.jpg" alt="">
+                <div class="desc_album">Сбербанк</div></div></div></a></li>
+            <li class="one_quarter g_image"><a href="gallery_sber.html"><div class="_album" style="">
+              <div class=""><img src="../images/demo/gallery/featured_250x188.jpg" alt="">
+                <div class="desc_album">Сбербанк</div></div></div></a></li>
+            <li class="one_quarter g_image"><a href="gallery_sber.html"><div class="_album" style="">
+              <div class=""><img src="../images/demo/gallery/featured_250x188.jpg" alt="">
+                <div class="desc_album">Сбербанк</div></div></div></a></li>
+
+            <!--
+            <li class="one_quarter g_image">
+              <a href="gallery_sber.html"><div class="desc_album">Сбербанк</div>
+                <div class="desc_album"><img src="../images/demo/gallery/featured_250x188.jpg" alt=""></div></a></li>
+            <li class="one_quarter g_image">
+              <a href="gallery_sber.html"><div class="desc_album">Сбербанк</div>
+                <div class="desc_album"><img src="../images/demo/gallery/featured_250x188.jpg" alt=""></div></a></li>
+            <li class="one_quarter g_image">
+              <a href="gallery_sber.html"><div class="desc_album">Сбербанк</div>
+                <div class="desc_album"><img src="../images/demo/gallery/featured_250x188.jpg" alt=""></div></a></li>
+
+            <li class="one_quarter g_image first">
+              <a href="gallery_sber.html"><div class="desc_album">Сбербанк</div>
+                <div class="desc_album"><img src="../images/demo/gallery/featured_250x188.jpg" alt=""></div></a></li>
+            <li class="one_quarter g_image">
+              <a href="gallery_sber.html"><div class="desc_album">Сбербанк</div>
+                <div class="desc_album"><img src="../images/demo/gallery/featured_250x188.jpg" alt=""></div></a></li>
+            <li class="one_quarter g_image">
+              <a href="gallery_sber.html"><div class="desc_album">Сбербанк</div>
+                <div class="desc_album"><img src="../images/demo/gallery/featured_250x188.jpg" alt=""></div></a></li>
+            <li class="one_quarter g_image">
+              <a href="gallery_sber.html"><div class="desc_album">Сбербанк</div>
+                <div class="desc_album"><img src="../images/demo/gallery/featured_250x188.jpg" alt=""></div></a></li>
+-->
+
           </ul>
-          <figcaption>Gallery Description Goes Here</figcaption>
+          <figcaption><h4>Какое то описание галереи или заголовок текста</h4></figcaption>
+          <figcaption>Какое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текст</figcaption>
         </figure>
       </div>
       <!-- ################################################################################################ -->
@@ -142,32 +195,32 @@
   <section id="cta" class="clear"> 
     <!-- ################################################################################################ -->
     <div class="center btmspace-50">
-      <h2 class="nospace">Donec facilisis volutpat ligula nec egestas.</h2>
-      <p class="nospace">Integer varius enim id augue faucibus mattis. Pellentesque scelerisque nibh eu mi convallis, ac feugiat nulla tincidunt.</p>
+      <h2 class="nospace">что же тут будет</h2>
+      <p class="nospace">ну ведь обязательно что то будет</p>
     </div>
     <div class="group">
-      <div class="colour-1 one_half first">
+      <!--<div class="colour-1 one_half first">
         <article class="group colour-1"> 
-          <!-- ################################################################################################ -->
+          <!-- ################################################################################################ --
           <div class="one_half first"><img src="../images/demo/320x220.gif" alt=""></div>
           <div class="one_half">
             <h6 class="heading">Quisque vehicula urna sit amet pulvinar dapibus</h6>
             <p class="link"><a class="btn" href="#">Read More &raquo;</a></p>
           </div>
-          <!-- ################################################################################################ -->
+          <!-- ################################################################################################ --
         </article>
       </div>
       <div class="colour-2 one_half">
         <article class="group colour-2"> 
-          <!-- ################################################################################################ -->
+          <!-- ################################################################################################ --
           <div class="one_half first"><img src="../images/demo/320x220.gif" alt=""></div>
           <div class="one_half">
             <h6 class="heading">Integer varius enim id augue faucibus mattis.</h6>
             <p class="link"><a class="btn" href="#">Read More &raquo;</a></p>
           </div>
-          <!-- ################################################################################################ -->
+          <!-- ################################################################################################ --
         </article>
-      </div>
+      </div>-->
     </div>
     <!-- ################################################################################################ -->
     <div class="clear"></div>
@@ -175,13 +228,15 @@
 </div>
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
+</div>
+<!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <div class="wrapper row5">
   <footer id="footer" class="clear"> 
     <!-- ################################################################################################ -->
     <div class="one_half first">
-      <h6 class="title">Lorem ipsum dolor</h6>
-      <p class="nospace btmspace-30">Donec sed ultrices eros. Nulla facilisi. Aliquam purus urna, porta non faucibus nec, luctus vitae ante. Suspendisse potenti. Morbi sollicitudin viverra urna, vel auctor purus volutpat vel.</p>
+      <h6 class="title">футер</h6>
+      <p class="nospace btmspace-30">а тут описание..описание..описание..описание..описание..описание..описание..</p>
       <ul class="nospace">
         <li class="btmspace-10">
           <address>
@@ -227,16 +282,20 @@
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
+
+
+<!--
 <div class="wrapper row6">
-  <div id="copyright" class="clear"> 
-    <!-- ################################################################################################ -->
+  <div id="copyright" class="clear">
+    <!-- ################################################################################################ --
     <p class="fl_left">Copyright &copy; 2015 - All Rights Reserved - <a href="#">Domain Name</a></p>
     <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
-    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ --
   </div>
-</div>
+</div>-->
 <!-- JAVASCRIPTS -->
 <script src="../layout/scripts/jquery.min.js"></script> 
 <script src="../layout/scripts/jquery.mobilemenu.js"></script>
+<script src="../layout/scripts/gallery.js"></script>
 </body>
 </html>
