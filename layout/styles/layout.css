@@ -72,6 +72,42 @@ h4{
 }
 
 
+
+
+
+
+
+
+
+/*Prices
+/**********************************************************************************************/
+.prices_content{
+	position: relative;
+	width: inherit;
+	height: inherit;
+	/*background-color: red;
+	border: 1px solid royalblue;
+	background-color: whitesmoke;*/
+}
+.prices_heading{
+	border-bottom: 1px solid whitesmoke;
+	padding-left: 15px;
+}
+.prices_table{
+	color: grey;
+
+}
+table tr:nth-child(1){
+	/*opacity: .9;*/
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+table tr th{
+	border-bottom: 1px solid lightgray;
+}
+
+/**********************************************************************************************/
+
 /* slides styling *
 
 .photo {width:635px; text-align:left; position:relative; margin:0 auto;}
@@ -264,7 +300,7 @@ h4{
 --------------------------------------------------------------------------------------------------------------- */
 /*#footer{padding:50px 0;}*/
 
-#footer .title{margin:0px 0 60px 0; padding:0 0 8px 0; border-bottom:1px solid; font-size:16px; text-transform:uppercase;}
+#footer .title{margin:10px 0 20px 0; padding:0 0 8px 0; border-bottom:1px solid; font-size:16px; text-transform:uppercase;}
 
 #footer .linklist li{margin-bottom:15px;}
 #footer .linklist li:last-child{margin-bottom:0;}
@@ -465,6 +501,7 @@ label span{color:#FF0000; background-color:inherit;}
 	background-color: rgba(255,255,255,0.16);
 	/*opacity: 0.3; /* Полупрозрачный фон */
 	/*filter: alpha(Opacity=70); /* Прозрачность в IE */
+
 }
 
 .row4, .row4 a{color:#292929; background-color:#F3F3F3;}
@@ -604,7 +641,7 @@ table a, #comments a{background-color:inherit;}
 /* Max Wrapper Width - Laptop, Desktop etc.
 --------------------------------------------------------------------------------------------------------------- */
 @media screen and (min-width:978px) {
-	#topbar, #header, #intro, #breadcrumb, .container, #cta, #footer, #copyright{max-width:980px;}
+	#topbar, #header, #intro, #breadcrumb, .container, #cta, #footer, #copyright{max-width:980px; }
 }
 
 
