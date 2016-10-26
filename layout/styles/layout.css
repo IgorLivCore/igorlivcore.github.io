@@ -96,6 +96,7 @@ h4{
 .prices_table{
 	color: grey;
 
+
 }
 table tr:nth-child(1){
 	/*opacity: .9;*/
@@ -104,8 +105,9 @@ table tr:nth-child(1){
 }
 table tr th{
 	border-bottom: 1px solid lightgray;
-}
+	background-color: #2f2f2f;
 
+}
 /**********************************************************************************************/
 
 /* slides styling *
