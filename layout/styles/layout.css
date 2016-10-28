@@ -108,6 +108,20 @@ table tr th{
 	background-color: #2f2f2f;
 
 }
+
+.promo{
+	border-bottom: 2px solid whitesmoke;
+}
+.color_time{color: #99f86d;}
+
+
+
+
+
+
+
+
+
 /**********************************************************************************************/
 
 /* slides styling *
@@ -196,6 +210,7 @@ table tr th{
 #header{}
 
 #header #logo{margin:8px 0 0 0;}
+#header #logo span.logo_town{font-size: 16px; color: /*black*/ #fbfbfb; background-color: /*whitesmoke*/ rgba(255, 0, 0, 0.62); border-radius: 8px; padding: 2px 4px; vertical-align: middle;}
 #header #logo h1{margin:0; padding:0; text-transform:none; font-size:36px; font-variant:small-caps;}
 
 
@@ -217,12 +232,12 @@ table tr th{
 
 #intro article ul{padding:20px 15px; font-style:italic;}
 #intro article ul li{padding:12px 0;}
-#intro article .link a{padding:20px 0; text-transform:uppercase; font-weight:bold;}
+#intro article .link a{padding:20px 0; text-transform:uppercase; font-weight:bold; font-family: Georgia, "Times New Roman", Times, serif;}
 
 
 /* Content Area
 --------------------------------------------------------------------------------------------------------------- */
-.container{padding:50px 0;}
+.container{padding:30px 0;}
 
 /* Content */
 .container .content{}
@@ -234,7 +249,7 @@ table tr th{
 	width: 100%; /* Ширина */
 	height: 100%; /* Ширина */
 	/*background: #5f6a72; /* Цвет фона */
-	background-color: rgba(69, 80, 88, 0.14);
+	/*background-color: rgba(69, 80, 88, 0.2);*/
 	padding: 20px 14px 22px 14px;
 	margin-left: -14px;
 	border-radius: 1px;
@@ -322,7 +337,10 @@ table tr th{
 
 /* Transition Fade
 --------------------------------------------------------------------------------------------------------------- */
-.faico a, #mainav ul, #mainav a, .btn, #intro article{transition:all .4s ease-in-out;}
+.faico a, #mainav ul, #mainav a, .btn, #intro article{
+	transition:all .2s ease-in-out;
+
+}
 
 
 /* ------------------------------------------------------------------------------------------------------------ */
@@ -484,10 +502,30 @@ a{color:#8ABA56;}
 hr, .borderedbox{border-color:#D7D7D7;}
 label span{color:#FF0000; background-color:inherit;}
 .overlay{background-color:rgba(0,0,0,.6);}
-.btn{border-color:#8ABA56;}
-.btn:hover{color:#FFFFFF; background-color:#8ABA56;}
+.btn{border-color: #e2e4d2;background-color: rgb(247, 247, 247); opacity: .95; border-radius: 2px;}
+.btn:hover{border-color:#8ABA56; color:#FFFFFF; background-color:#8ABA56; opacity: 1;border-radius: 2px;}
 
+article p a.btn{
+	border-color:#8ABA56;
+	position: relative;
+	z-index: 2;
+	text-align: center;
+	max-width: 500px;
+	font-size: 10px;
+	cursor: pointer;
+	transition: .1s linear;
+	color: rgba(82, 187, 52, 0.92);
+}
+article p a.btn:hover{border-color:#8ABA56;
+	-webkit-transform: scale(1.06);
+	transform: scale(1.06);
+}
 
+article.press_call p.link a.btn{
+	font-size: 16px;
+	transition: .1s linear;
+	border: 1px solid #8ABA56/*rgba(247, 247, 247, 0.75)*/;
+}
 /* Rows */
 .row0, .row0 a{color:#333/*888888*/; background-color:#F7F7F7;}/**/
 .row1{
@@ -524,11 +562,12 @@ label span{color:#FF0000; background-color:inherit;}
 #intro article ul{color:#888888; background-color:#FFFFFF;}
 #intro article .link a{color:#FFFFFF; background-color:#8ABA56;} /*background-color:#8ABA56;*/
 .heading{
-	border-radius: 2px;
+	border-radius: 200px;
+
 }
 
 /* Content Area */
-#featuredpost figcaption{color:#FFFFFF; background-color:rgba(0,0,0,.5);}
+#featuredpost figcaption{color:#FFFFFF; /*background-color:rgba(0,0,0,.1);*/}
 #latestposts li{border-color:#D7D7D7;}
 
 
@@ -601,7 +640,7 @@ table a, #comments a{background-color:inherit;}
 	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
 	.fl_left, .fl_right{display:block; float:none;}
 	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{
-		display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
+		display:block; float:none; width:auto; margin:0 0 30px 0; padding:0; }
 }
 
 @media screen and (min-width:180px) and (max-width:900px) {
@@ -643,7 +682,7 @@ table a, #comments a{background-color:inherit;}
 /* Max Wrapper Width - Laptop, Desktop etc.
 --------------------------------------------------------------------------------------------------------------- */
 @media screen and (min-width:978px) {
-	#topbar, #header, #intro, #breadcrumb, .container, #cta, #footer, #copyright{max-width:980px; }
+	#topbar, #header, #intro, #breadcrumb, .container, #cta, #footer, #copyright{max-width:980px;}
 }
 
 
