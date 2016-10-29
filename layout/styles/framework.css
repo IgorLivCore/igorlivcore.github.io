@@ -49,7 +49,7 @@ label{margin-bottom:5px;}
 /* Generalise
 --------------------------------------------------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, .heading{
-    margin:0 0 20px 0;
+    margin: 0;
     font-size:22px;
     line-height:normal;
     text-transform:uppercase;
@@ -57,9 +57,8 @@ h1, h2, h3, h4, h5, h6, .heading{
 }
 h2.promo{
     text-align: center;
-    margin:0 0 20px 0;
-}
 
+}
 address{font-style:normal; font-weight:normal;}
 hr{display:block; width:100%; height:1px; border:solid; border-width:1px 0 0 0;}
 
@@ -71,6 +70,10 @@ hr{display:block; width:100%; height:1px; border:solid; border-width:1px 0 0 0;}
     text-align:left;
     word-wrap:break-word;
 }
+.wrapper.row4.why{
+    background: url(../../images/demo/backgrounds/why.jpg);
+}
+
 #topbar, #header, #intro, #breadcrumb, .container, #cta, #footer, #copyright{
 /*    display:block;////////////////*/
     margin:0 auto;
@@ -97,7 +100,7 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 .one_third{width:31.28834355828221%;}
 .one_half, .two_quarter{width:48.46625766871166%;}
  .one_half{
-     padding: 20px 6px;
+     padding: 0px 6px;
      border-radius: 2px;
 }
 .two_third{width:65.6441717791411%;}
@@ -106,6 +109,7 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 
 /* Spacing
 --------------------------------------------------------------------------------------------------------------- */
+.btmspace-7{margin-bottom:7px;}
 .btmspace-10{margin-bottom:10px;}
 .btmspace-15{margin-bottom:15px;}
 .btmspace-30{margin-bottom:30px;}
