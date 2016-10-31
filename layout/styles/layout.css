@@ -177,20 +177,17 @@ table tr th{
 
 /* Rows
 --------------------------------------------------------------------------------------------------------------- */
-.row0, .row0 a{}
-.row1{
+.row0{
 	border-bottom:0px solid;
 	border-top:0px solid;
 }
-.row2, .row2 a{}
-.row3{
+.row1{
 	margin-top: 60px;
 	margin-bottom: 60px;
 
   }
-.row3, .row3 a{}
-.row4, .row4 a{}
-.row5{
+.row1, .row1 a{}
+.row2{
 	border-top:0px solid;
     /*position: absolute;*/
 
@@ -198,7 +195,6 @@ table tr th{
     display: block;
     bottom: 0px;
 }
-.row6, .row6 a{}
 
 /* Top Bar
 --------------------------------------------------------------------------------------------------------------- */
@@ -537,16 +533,13 @@ article.press_call p.link a.btn{
 	border-radius: 60px;
 }
 /* Rows */
-.row0, .row0 a{color:#333/*888888*/; background-color:#F7F7F7;}/**/
-.row1{
+.row0{
 	color:#292929;
 	background-color:#252525;
 	border-color:#8ABA56;
 	/*border-bottom-color: #888888;*/
 }
-.row2{color:#FFFFFF; background-color:#232323;}
-
-.row3{
+.row1{
 	color: azure/*292929*/;
 	background-color: rgba(255,255,255,0.16);
 	/*opacity: 0.3; /* Полупрозрачный фон */
@@ -554,10 +547,7 @@ article.press_call p.link a.btn{
 
 }
 
-.row4, .row4 a{color:#292929; background-color:#F3F3F3;}
-.row5{color:#888888; background-color:#232323; border-color:#8ABA56;}
-.row6, .row6 a{color:#888888; background-color:#111111;}
-
+.row2{color:#888888; background-color:#232323; border-color:#8ABA56;}
 
 /* Top Bar */
 .nospace.linklist li{border-color:#888888;}
