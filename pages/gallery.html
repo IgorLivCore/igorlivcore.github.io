@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PlitProfi | Галерея</title>
+  <title>Галерея | PlitProfi.ru</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <link href="../scripts/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body>
 <div class="page_wraper">
@@ -14,19 +14,20 @@
   <header id="header" class="clear"> 
     <!-- ################################################################################################ -->
     <div id="logo" class="fl_left">
-      <h1><a href="../index.html" style="color: rgb(226, 226, 226);">plit profi</a></h1>
+      <h1><a href="../index.html" style="color: rgb(226, 226, 226);">plit profi <span class="logo_town">Казань</span></a></h1>
     </div>
     <!-- ################################################################################################ -->
     <nav id="mainav" class="fl_right">
       <ul class="clear">
         <li><a href="../index.html">Главная</a></li>
-        <li><a class="" href="#">Услуги</a></li>
+        <li><a class="" href="../pages/services.html">Услуги</a></li>
         <li><a href="../pages/prices.html">Цены</a></li>
 
         <li class="active"><a class="drop" href="../pages/gallery.html">Галерея</a>
           <ul>
             <li><a href="gallery_sber.html">Сбербанк</a></li>
-            <li><a href="#">Планетарий</a></li>
+            <li><a href="gallery_planetary.html">Планетарий</a></li>
+            <li><a href="gallery_underground.html">Подземный переход</a></li>
           </ul>
         </li>
 
@@ -47,38 +48,22 @@
       <div id="gallery">
         <figure>
           <header class="heading">
-            <h4><span style="color: #33df33;">></span> Все альбомы</h4>
+            <div class="main_heading"><h2><!--<span style="color: #33df33;">></span>-->Галерея</h2></div>
           </header>
           <ul class="nospace clear">
               <!--class="one_quarter g_image first shadow_album"> for album view-->
             <li class="one_quarter g_image first"><a href="gallery_sber.html"><div class="" style="">
-              <div class=""><img src="../images/demo/gallery/featured_250x188.jpg" alt="">
-                <div class="desc_album">Сбербанк</div></div></div></a></li>
+              <div class=""><img src="../images/small_underground.jpg" alt="">
+                <div class="desc_album">Подземный переход</div></div></div></a></li>
             <li class="one_quarter g_image"><a href="gallery_sber.html"><div class="_album" style="">
-              <div class=""><img src="../images/demo/gallery/featured_250x188.jpg" alt="">
-                <div class="desc_album">Сбербанк</div></div></div></a></li>
+              <div class=""><img src="../images/small_planetary.jpg" alt="">
+                <div class="desc_album">Планетарий</div></div></div></a></li>
             <li class="one_quarter g_image"><a href="gallery_sber.html"><div class="_album" style="">
-              <div class=""><img src="../images/demo/gallery/featured_250x188.jpg" alt="">
-                <div class="desc_album">Сбербанк</div></div></div></a></li>
-            <li class="one_quarter g_image"><a href="gallery_sber.html"><div class="_album" style="">
-              <div class=""><img src="../images/demo/gallery/featured_250x188.jpg" alt="">
+              <div class=""><img src="../images/small_sber.jpg" alt="">
                 <div class="desc_album">Сбербанк</div></div></div></a></li>
 
-            <li class="one_quarter g_image first"><a href="gallery_sber.html"><div class="_album" style="">
-              <div class=""><img src="../images/demo/gallery/featured_250x188.jpg" alt="">
-                <div class="desc_album">Сбербанк</div></div></div></a></li>
-            <li class="one_quarter g_image"><a href="gallery_sber.html"><div class="_album" style="">
-              <div class=""><img src="../images/demo/gallery/featured_250x188.jpg" alt="">
-                <div class="desc_album">Сбербанк</div></div></div></a></li>
-            <li class="one_quarter g_image"><a href="gallery_sber.html"><div class="_album" style="">
-              <div class=""><img src="../images/demo/gallery/featured_250x188.jpg" alt="">
-                <div class="desc_album">Сбербанк</div></div></div></a></li>
-            <li class="one_quarter g_image"><a href="gallery_sber.html"><div class="_album" style="">
-              <div class=""><img src="../images/demo/gallery/featured_250x188.jpg" alt="">
-                <div class="desc_album">Сбербанк</div></div></div></a></li>
           </ul>
-          <figcaption><h4>Какое то описание галереи или заголовок текста</h4></figcaption>
-          <figcaption>Какое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текстКакое то описание или текст</figcaption>
+          <!--<figcaption><h4></h4></figcaption><figcaption></figcaption>-->
         </figure>
       </div>
       <!-- ################################################################################################ -->
@@ -90,12 +75,12 @@
   </main>
 </div>
   <!-- ################################################################################################ -->
+</div>
   <div class="wrapper row2">
     <footer id="footer" class="clear">
-      <!-- ################################################################################################ -->
       <div class="one_half first">
         <h6 class="title">Plit Profi <span>Профессиональная отделка в Казани</span></h6>
-        <p class="nospace btmspace-10">Работаем без посредников</p>
+        <p class="nospace btmspace-10">Без посредников</p>
         <p class="nospace btmspace-10">Гарантии</p>
         <p class="nospace btmspace-10">Хорошие цены</p>
       </div>
@@ -105,25 +90,27 @@
         <ul class="nospace">
           <li class="btmspace-10">
             <address>
-              <span class="fa fa-map-marker"></span> Казань, ул.Маяковского, д.6
+              <span class="fa fa-map-marker"></span> Казань
             </address>
           </li>
-          <li class="btmspace-10"><span class="fa fa-phone"></span> +7 (962) 456 7894</li>
-          <li><span class="fa fa-envelope-o"></span> info@gmail.com</li>
+          <li class="btmspace-10"><span class="fa fa-phone"></span> +7 900 326 18 22</li>
+          <li><span class="fa fa-envelope-o"></span> mail@plitprofi.ru</li>
         </ul>
       </div>
       <div class="one_quarter">
-        <h6 class="title">мы в сети</h6>
+        <h6 class="title">в сети</h6>
         <ul class="faico clear">
-          <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a class="faicon-rss" href="#"><i class="fa fa-rss"></i></a></li>
+          <li><a class="faicon-vk" href="https://vk.com/id180928575">
+            <i class="fa fa-vk"></i></a> Вугар Салаев</li>
+          <li><a class="faicon-whatsapp"><i class="fa"><img src="../images/whatsapp_small_footer.png" href="#"></i></a> +7 904 766 45 83</li>
         </ul>
       </div>
     </footer>
   </div>
-<!-- JAVASCRIPTS -->
-<script src="../layout/scripts/jquery.min.js"></script> 
-<script src="../layout/scripts/jquery.mobilemenu.js"></script>
-<script src="../layout/scripts/gallery.js"></script>
+</div>
+  <!-- JAVASCRIPTS -->
+<script src="../scripts/js/jquery.min.js"></script>
+<script src="../scripts/js/jquery.mobilemenu.js"></script>
+<script src="../scripts/js/gallery.js"></script>
 </body>
 </html>
